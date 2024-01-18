@@ -106,9 +106,9 @@ h1 {
 footer p {
     display: block;
     text-align: center;
-    color: gold;
+    color: yellow;
 }
 
 #lastModified {
-    color: orange;
+    color: lightcoral;
 }
