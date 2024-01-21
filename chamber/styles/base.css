@@ -22,14 +22,6 @@ header img {
     justify-self: right;
 }
 
-header h1{
-    margin-bottom: 0;
-}
-
-header h2 {
-    margin-top: 0.25rem;
-}
-
 nav{
     align-items: center;
     background-color: #455e22;
