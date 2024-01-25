@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Activity</title>
+    <meta name="description" content="WDD230 responsive image learning activity">
+    <meta name="author" content="Andrew Leetham">
+    <link rel="icon" href="../images/favicon.ico">
+    <meta property="og:url" content="https://ganonymous.github.io/wdd230/week03/responsive-images.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Responsive Images">
+    <meta property="og:description" content="An image, responsively sized">
+    <meta property="og:image" content="http://ganonymous.github.io/wdd230/images/pnw-forest.jpg">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="The Portland Oregon Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
