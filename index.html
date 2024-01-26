@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Andrew Leetham Profile" width="80" height="106">
+        <img src="images/profile.webp" alt="Andrew Leetham Profile" width="80" height="107">
         <span>Andrew Leetham</span>
         <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode" id="darkBtn" width="50">
     </header>
@@ -37,11 +37,20 @@
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="The Portland Oregon Temple" width="960" height="720">
+            </picture>
+            <div class="heroLabel">
+                <p>Portland Oregon Temple</p>
+            </div>
+        </div>
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
                 <li>Week 1: <a href="week01/holygrail.html">Holy Grail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/Andrew-Leetham/pen/VwRjmjK">JS Pen</a></li>
-                <li>Week 2: <a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/Andrew-Leetham/pen/MWxpZde">'Hamburger' Menu</a> <a href="week02/bom.html">DOM manipulation</a></li>
+                <li>Week 2: <a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/Andrew-Leetham/pen/MWxpZde">'Hamburger' Menu</a> | <a href="week02/bom.html">DOM manipulation</a></li>
                 <li>Week 3: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazy-load.html">Lazy Load</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">Local Storage</a></li>
                 <li>Week 4:</li>
                 <li>Week 5:</li>
@@ -52,8 +61,9 @@
             <h2>Information</h2>
             <p>Camas, Washington</p>
             <p>Weather Placeholder</p>
-            <p>Visits Placeholder</p>
+            <p>You have visited <span id="visitCounter"></span> time(s) before</p>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89309.78458186028!2d-122.41957872696365!3d45.61203522689354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706229717806!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> | Andrew Leetham | Washington, USA</p>
@@ -62,5 +72,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menuButton.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitCount.js"></script>
 </body>
 </html>
