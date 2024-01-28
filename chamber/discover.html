@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camas Chamber of Commerce</title>
+    <meta name="description" content="Camas Chamber of Commerce Home Page">
+    <meta name="author" content="Andrew Leetham">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:url" content="https://ganonymous.github.io/wdd230/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camas Chamber of Commerce">
+    <meta property="og:description" content="Businesses and events in the city of Camas">
+    <meta property="og:image" content="https://ganonymous.github.io/wdd230/chamber/images/hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo for the City of Camas">
+        <h1>City of Camas<br>Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <section class="card">
+                <h2>History</h2>
+                <p>This section would contain a brief history of Camas. In actuality, this is a placeholder, so there's no real text here. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, magnam error! Vero facilis ex eveniet ipsa. Voluptatibus ducimus voluptate id?</p>
+            </section>
+            <div id="lastVisit"></div>
+            <section class="card">
+                <h2>Events</h2>
+                <h3>Placeholder event 1</h3>
+                <p>Here is a placeholder description for the event.</p>
+                <a>more info ...</a>
+                <hr>
+                <h3>Placeholder event 2</h3>
+                <p>Here is a placeholder description for the event.</p>
+                <a>more info ...</a>
+            </section>
+        </div>
+        <section class="gallery">
+            <h2>Local Photos</h2>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/docks-small.webp">
+                    <img src="images/docks-large.webp" alt="photo of the Port of Camas-Washougal docks" loading="lazy" width="1000" height="667">
+                </picture>
+                <figcaption>Docks at the Port of Camas-Washougal</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/downtown-christmas-small.webp">
+                    <img src="images/downtown-christmas-large.webp" alt="downtown Camas at night, decorated for Christmas" loading="lazy" width="1000" height="750">
+                </picture>
+                <figcaption>Historic Downtown Camas, decorated for Christmas</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/from-14-small.webp">
+                    <img src="images/from-14-large.webp" alt="view of downtown camas from SR-14" loading="lazy" width="1000" height="383">
+                </picture>
+                <figcaption>The view of Camas from nearby Highway 14</figcaption>
+            </figure>
+            <figure>
+                <img src="images/plant-garden.webp" alt="photo of the annual Camas Plant and Garden Fair" loading="lazy" width="500" height="266">
+                <figcaption>Annual Plant and Garden Fair</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/lacamas-lake-small.webp">
+                    <img src="images/lacamas-lake-large.webp" alt="photo of Lacamas Lake" loading="lazy" width="1000" height="510">
+                </picture>
+                <figcaption>Nearby Lacamas Lake</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/liberty-theater-small.webp">
+                    <img src="images/liberty-theater-large.webp" alt="photo of the entrance of the Liberty Theater" loading="lazy" width="1000" height="750">
+                </picture>
+                <figcaption>The Historic Liberty Theater</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <div class="logoName">
+            <img src="images/logo.jpg" alt="Logo for the City of Camas">
+            <h2>Camas Chamber of Commerce</h2>
+        </div>
+        <p>Phony address <br>Camas, Washington 98607</p>
+        <p>info@camascc.org<br>(360)555-5555</p>
+        <hr>
+        <p>&copy;<span id="year"></span> | <strong>Andrew Leetham</strong> | WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuButton.js"></script>
+    <script src="scripts/lastVisit.js"></script>
+</body>
+</html>
