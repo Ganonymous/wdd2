@@ -1,0 +1,30 @@
+table {
+    margin: 1rem auto;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: .75 rem;
+    caption-side: bottom;
+    color: darkblue;
+}
+
+th, td {
+    padding: .5rem 1rem;
+    border: 1px solid lightgray;
+}
+
+thead {
+    background-color: darkblue;
+    color: white;
+    font-size: larger;
+}
+
+thead tr:last-child th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(240, 245, 255);
+}
