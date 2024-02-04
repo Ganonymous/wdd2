@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for applying!</title>
+    <meta name="description" content="Camas Chamber of Commerce application received">
+    <meta name="author" content="Andrew Leetham">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:url" content="https://ganonymous.github.io/wdd230/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camas Chamber of Commerce">
+    <meta property="og:description" content="Thanks for applying!">
+    <meta property="og:image" content="https://ganonymous.github.io/wdd230/chamber/images/hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo for the City of Camas">
+        <h1>City of Camas<br>Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="card" id="thanks">
+            <h2>Thank You</h2>
+            <p>Your application has been sent. Please allow us time to review, and we'll reach out to the provided contact email address.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="logoName">
+            <img src="images/logo.jpg" alt="Logo for the City of Camas">
+            <h2>Camas Chamber of Commerce</h2>
+        </div>
+        <p>Phony address <br>Camas, Washington 98607</p>
+        <p>info@camascc.org<br>(360)555-5555</p>
+        <hr>
+        <p>&copy;<span id="year"></span> | <strong>Andrew Leetham</strong> | WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuButton.js"></script>
+</body>
+</html>

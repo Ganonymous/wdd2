@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camas Chamber of Commerce</title>
+    <meta name="description" content="Camas Chamber of Commerce Home Page">
+    <meta name="author" content="Andrew Leetham">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:url" content="https://ganonymous.github.io/wdd230/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camas Chamber of Commerce">
+    <meta property="og:description" content="Businesses and events in the city of Camas">
+    <meta property="og:image" content="https://ganonymous.github.io/wdd230/chamber/images/hero.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo for the City of Camas">
+        <h1>City of Camas<br>Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label class="top" title="Seven or more characters: letters, hyphens, and spaces only">Title or Position<input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}"></label>
+                <label class="top">Email* <input type="email" id="email" name="email" required placeholder="someone@business.com"></label>
+                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business/Organization Information</legend>
+                <label class="top">Name* <input type="text" id="bname" name="bname" required></label>
+                <div>Membership Level</div>
+                <label class ="sbs"><input type="radio" name="level" value="np"> NP (Non-Profit Organization)</label>
+                <label class ="sbs"><input type="radio" name="level" value="bronze"> Bronze</label>
+                <label class ="sbs"><input type="radio" name="level" value="silver"> Silver</label>
+                <label class ="sbs"><input type="radio" name="level" value="gold"> Gold</label>
+                <label class="top">Description <textarea name="desc" id="desc" placeholder="Describe your business or organization"></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            <input type="submit" value="Join the Chamber" class="submitBtn">
+        </form>
+
+        <section class="card">
+            <h2>Membership Level Information</h2>
+            <table>
+                <caption>Membership Level Comparison</caption>
+                <thead>
+                    <tr>
+                        <th colspan="5">Camas Chamber of Commerce</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <th>NP</th>
+                        <th>Bronze</th>
+                        <th>Silver</th>
+                        <th>Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cost/mo.</td>
+                        <td>FREE</td>
+                        <td>$100</td>
+                        <td>$250</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Access to Member-Only Events</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Directory Listing</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Publicize Events</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Access to Special Trainings</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Presenter Spaces/Event Booths</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Home Page Spotlight</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="logoName">
+            <img src="images/logo.jpg" alt="Logo for the City of Camas">
+            <h2>Camas Chamber of Commerce</h2>
+        </div>
+        <p>Phony address <br>Camas, Washington 98607</p>
+        <p>info@camascc.org<br>(360)555-5555</p>
+        <hr>
+        <p>&copy;<span id="year"></span> | <strong>Andrew Leetham</strong> | WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menuButton.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>
