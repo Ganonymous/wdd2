@@ -1,0 +1,106 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Andrew-Leetham/pen/VwRjmjK",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/Andrew-Leetham/pen/MWxpZde",
+                    "title": "'Hamburger' Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazy-load.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "LocalStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Andrew-Leetham/pen/dyrdyyN",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/combinators.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "Web Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Andrew-Leetham/pen/RwdBZBj",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+            ]
+        }
+    ]
+}

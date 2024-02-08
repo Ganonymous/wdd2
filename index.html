@@ -48,19 +48,14 @@
         </div>
         <section class="card">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 1: <a href="week01/holygrail.html">Holy Grail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/Andrew-Leetham/pen/VwRjmjK">JS Pen</a></li>
-                <li>Week 2: <a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/Andrew-Leetham/pen/MWxpZde">'Hamburger' Menu</a> | <a href="week02/bom.html">DOM manipulation</a></li>
-                <li>Week 3: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazy-load.html">Lazy Load</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">Local Storage</a></li>
-                <li>Week 4: <a href="https://codepen.io/Andrew-Leetham/pen/dyrdyyN">Pseudo-classes</a> | <a href="week04/images/combinators.png">Combinators</a> | <a href="week04/tablebuild.html">Table Build</a> | <a href="week04/form-start/index.html">Web Forms</a></li>
-                <li>Week 5: <a href="https://codepen.io/Andrew-Leetham/pen/RwdBZBj">Pseudo-elements</a> | <a href="week05/new-ward-members.json">JSON</a> | <a href="week05/prophets.html">Fetch API</a> | <a href="week05/weather.html">Weather API</a></li>
-                <li>Week 6:</li>
+            <ul id="activities">
             </ul>
         </section>
         <section class="card">
             <h2>Information</h2>
             <p>Camas, Washington</p>
-            <p>Weather Placeholder</p>
+            <img id="weather-icon" src="" alt="">
+            <p><span id="current-temp"></span> - <span id="weather-description"></span></p>
             <p>You have visited <span id="visitCounter"></span> time(s) before</p>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89309.78458186028!2d-122.41957872696365!3d45.61203522689354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706229717806!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -73,5 +68,7 @@
     <script src="scripts/menuButton.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/visitCount.js"></script>
+    <script src="scripts/homeWeather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
