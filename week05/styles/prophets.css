@@ -1,0 +1,36 @@
+body {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    color: green;
+
+
+}
+
+h1, h2, header span {
+    font-family: 'Tektur', sans-serif;
+}
+
+main {
+    border-radius: 5px;
+    box-shadow: 0 0 25px darkgray;
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+section {
+    border: 1px solid green;
+    background-color: lightgreen;
+    margin: .25rem auto;
+    max-width: 95%;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 0 15px darkgreen;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
