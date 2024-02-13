@@ -1,5 +1,6 @@
 :root {
     --green: #455e22;
+    --link: #00b3ff;
 }
 
 body {
@@ -148,7 +149,7 @@ nav .active {
 }
 
 .spotlight a {
-    color: #00b3ff;
+    color: var(--link);
     text-align: center;
 }
 
@@ -298,4 +299,79 @@ thead tr:last-child th {
 
 tbody tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.25);
+}
+
+main>h2{
+    display: block;
+    background-color: maroon;
+    padding: .5rem;
+    margin: .25rem auto;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#layout-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#layout-controls button{
+    margin: 0.75rem;
+    border-radius: 4px;
+}
+
+#directory section {
+    background-color: var(--green);
+}
+
+.list section {
+    padding: .75rem;
+}
+
+.grid section{
+    border-radius: 8px;
+    margin: .5rem;
+    text-align: center;
+    box-shadow: 0 0 15px darkblue;
+}
+
+.grid img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: .25rem auto;
+    padding: .25rem;
+}
+
+#directory p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.grid a {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+#directory span img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+#directory a {
+    color: var(--link)
+}
+
+.list img {
+    display: none;
+}
+
+#directory.list section:nth-child(even) {
+    background-color: maroon;
+}
+
+.list {
+    margin-bottom: .5rem;
 }

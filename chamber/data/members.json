@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Georgia Pacific",
+            "address": "401 NE Adams St. Camas, WA",
+            "phone": "(360) 834-3021",
+            "website": "gp.com",
+            "image": "gp.svg",
+            "membership": "silver"
+        },
+        {
+            "name": "Lutz Hardware",
+            "address": "505 NE 4th Ave. Camas, WA",
+            "phone": "(360) 834-2663",
+            "website": "lutzhardware.doitbest.com",
+            "image": "lutz.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Liberty Theatre",
+            "address": "315 NE 4th Ave. Camas, WA",
+            "phone": "(360) 859-9555",
+            "website": "camasliberty.com",
+            "image": "liberty-theatre.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Camas Public Library",
+            "address": "625 NE 4th Ave. Camas, WA",
+            "phone": "(360) 834-4692",
+            "website": "camaslibrary.org",
+            "image": "camas-library.webp",
+            "membership": "np"
+        },
+        {
+            "name": "Camas Bike & Sport",
+            "address": "303 NE 6th Ave. Camas, WA",
+            "phone": "(360) 210-5160",
+            "website": "camasbikes.com",
+            "image": "camas-bike-sport.webp",
+            "membership": "silver"
+        },
+        {
+            "name": "Straub's Funeral Home",
+            "address": "325 NE 3rd Ave. Camas, WA",
+            "phone": "(360) 834-4563",
+            "website": "straubsfuneralhome.com",
+            "image": "straubs.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Hartman & Sons Painting",
+            "address": "1530 NE Everett St. Camas, WA",
+            "phone": "(360) 910-1977",
+            "website": "hartmanandsons.com",
+            "image": "hartman-sons.webp",
+            "membership": "bronze"
+        }
+    ]
+}
