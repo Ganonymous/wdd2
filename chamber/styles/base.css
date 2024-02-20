@@ -10,7 +10,7 @@ body {
     padding: 1rem;
 }
 
-h1, h2, h3, .force-Merriweather {
+h1, h2, h3, h4, .force-Merriweather {
     font-family: 'Merriweather', serif;
 }
 
@@ -23,7 +23,6 @@ header {
 }
 
 header img {
-    grid-row: 1 / 3;
     justify-self: right;
 }
 
@@ -126,6 +125,35 @@ nav .active {
     cursor: pointer;
 }
 
+#today-weather{
+    text-align: center;
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: .25rem;
+}
+
+#forecast h3 {
+    grid-column: 1 / 4;
+}
+
+#forecast div {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0;
+}
+
+#forecast div:nth-of-type(odd) {
+    background-color: maroon;
+}
+
+#forecast p {
+    padding: 0;
+}
+
 .spotlight {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -145,12 +173,17 @@ nav .active {
 }
 
 .spotlight p {
-    text-align: right;
+    text-align: center;
+    margin: 0 .5rem;
 }
 
 .spotlight a {
     color: var(--link);
     text-align: center;
+}
+
+.business *:last-child {
+    padding-bottom: .5rem;;
 }
 
 #lastVisit {
@@ -374,4 +407,27 @@ main>h2{
 
 .list {
     margin-bottom: .5rem;
+}
+
+#banner {
+    background-color: maroon;
+    text-align: center;
+    position: relative;
+    margin: .25rem;
+    padding: .5rem;
+}
+
+#banner button {
+    padding: .75rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--green);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
 }
